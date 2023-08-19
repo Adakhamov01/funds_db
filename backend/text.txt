@@ -1,0 +1,3 @@
+username: toktasinovakmalzhan01
+password: 9UplLWWcyfuizHcH
+MONGODB_URL: mongodb+srv://toktasinovakmalzhan01:9UplLWWcyfuizHcH@cluster0.gvieya5.mongodb.net/
