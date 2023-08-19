@@ -5,7 +5,13 @@ const EmployerModel = require("./models/Employer")
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin: ["funds-db-blgwpqj65-akmalzhan01.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+))
 
 mongoose.connect("mongodb+srv://toktasinovakmalzhan01:9UplLWWcyfuizHcH@cluster0.gvieya5.mongodb.net/")
 
