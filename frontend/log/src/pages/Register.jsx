@@ -12,7 +12,7 @@ export default function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:3001/register', {name, email, password})
+    axios.post('https://funds-db-api.vercel.app/register', {name, email, password})
     .then((success) => {
       console.log(success);
       navigate("/login")
