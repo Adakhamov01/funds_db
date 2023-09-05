@@ -10,7 +10,7 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('https://funds-db-api.vercel.app//login', { email, password})
+    axios.post('https://funds-db-api.vercel.app/login', { email, password})
     .then((success) => {
       console.log(success);
       if(success.data === "Success"){
