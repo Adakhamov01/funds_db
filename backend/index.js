@@ -7,9 +7,7 @@ const app = express()
 app.use(express.json())
 app.use(cors(
     {
-        origin: ["https://funds-db-api.vercel.app/"],
-        methods: ["POST", "GET"],
-        credentials: true
+        origin: ["*"],
     }
 ))
 
